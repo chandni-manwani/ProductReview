@@ -35,7 +35,7 @@ public class CommentClassifierImpl implements ICommentClassifier{
 		
 		CommentClassResponse commentClass = new CommentClassResponse(false, "Clean");
 		
-		// Check For any Insult / Threat / Racism
+		// Check For any Insult / Threat / Obscene
 		if (checkInsult(comment, commentClass) || checkThreat(comment, commentClass)
 				|| checkObscene(comment, commentClass)) {
 			return commentClass;
